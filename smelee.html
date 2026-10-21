@@ -1,0 +1,244 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="ru">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta name="viewport" content="width=device-width, initial-scale=1">\
+  <meta name="color-scheme" content="light">\
+  <title>\uc0\u1057 \u1084 \u1077 \u1083 \u1077 \u1077  \'97 \u1087 \u1088 \u1072 \u1082 \u1090 \u1080 \u1082 \u1072  \u1091 \u1074 \u1077 \u1088 \u1077 \u1085 \u1085 \u1086 \u1089 \u1090 \u1080 </title>\
+  <style>\
+    :root \{\
+      --bg: #f5f5f1;\
+      --paper: #ffffff;\
+      --ink: #202b28;\
+      --muted: #59665f;\
+      --brand: #245d49;\
+      --brand-dark: #194332;\
+      --soft: #eaf2ed;\
+      --line: #dce3dd;\
+      --warm: #fff4dd;\
+      --radius: 20px;\
+    \}\
+\
+    * \{ box-sizing: border-box; \}\
+    [hidden] \{ display: none !important; \}\
+\
+    body \{\
+      margin: 0;\
+      background: var(--bg);\
+      color: var(--ink);\
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;\
+      font-size: 17px;\
+      line-height: 1.65;\
+    \}\
+\
+    button, textarea \{ font: inherit; \}\
+    button, a \{ -webkit-tap-highlight-color: transparent; \}\
+\
+    button \{\
+      border: 1px solid var(--line);\
+      border-radius: 12px;\
+      padding: 12px 17px;\
+      background: var(--paper);\
+      color: var(--ink);\
+      cursor: pointer;\
+      min-height: 48px;\
+    \}\
+\
+    button:hover \{ background: var(--soft); \}\
+\
+    button.primary \{\
+      background: var(--brand);\
+      border-color: var(--brand);\
+      color: white;\
+      font-weight: 700;\
+    \}\
+\
+    button.primary:hover \{ background: var(--brand-dark); \}\
+\
+    a \{ color: var(--brand); \}\
+\
+    h1, h2, h3 \{\
+      line-height: 1.2;\
+      letter-spacing: -.025em;\
+    \}\
+\
+    h1 \{ font-size: clamp(2.2rem, 6vw, 4rem); \}\
+    h2 \{ font-size: clamp(1.65rem, 4vw, 2.4rem); \}\
+\
+    .shell \{\
+      max-width: 1060px;\
+      margin: auto;\
+      padding: 0 22px;\
+    \}\
+\
+    header \{\
+      background: var(--paper);\
+      border-bottom: 1px solid var(--line);\
+    \}\
+\
+    .topbar \{\
+      min-height: 82px;\
+      display: flex;\
+      align-items: center;\
+      justify-content: space-between;\
+      gap: 16px;\
+      flex-wrap: wrap;\
+      padding-top: 14px;\
+      padding-bottom: 14px;\
+    \}\
+\
+    .brand \{\
+      font-size: 1.45rem;\
+      font-weight: 850;\
+      letter-spacing: -.04em;\
+    \}\
+\
+    .topnav \{\
+      display: flex;\
+      gap: 10px;\
+      flex-wrap: wrap;\
+    \}\
+\
+    main \{ padding-top: 34px !important; padding-bottom: 60px !important; \}\
+\
+    .hero \{\
+      padding: clamp(24px, 5vw, 56px);\
+      background: var(--soft);\
+      border-radius: 26px;\
+      margin-bottom: 24px;\
+    \}\
+\
+    .hero h1 \{ max-width: 800px; margin: 12px 0 24px; \}\
+    .muted \{ color: var(--muted); \}\
+\
+    .card \{\
+      background: var(--paper);\
+      border: 1px solid var(--line);\
+      border-radius: var(--radius);\
+      padding: clamp(20px, 4vw, 32px);\
+      margin-bottom: 20px;\
+    \}\
+\
+    label \{\
+      display: block;\
+      font-weight: 650;\
+      margin: 24px 0 8px;\
+    \}\
+\
+    textarea \{\
+      display: block;\
+      width: 100%;\
+      min-height: 115px;\
+      padding: 14px;\
+      color: var(--ink);\
+      background: #fdfefc;\
+      border: 1px solid #aab9ae;\
+      border-radius: 12px;\
+      resize: vertical;\
+    \}\
+\
+    .status-bar \{\
+      margin-top: 10px;\
+      font-size: 0.9rem;\
+      color: var(--brand);\
+      min-height: 20px;\
+    \}\
+\
+    footer \{\
+      border-top: 1px solid var(--line);\
+      padding: 24px 0 34px;\
+      margin-top: 40px;\
+    \}\
+\
+    @media (max-width: 680px) \{\
+      .topnav \{ width: 100%; \}\
+      .topnav button \{ flex: 1; padding: 10px; \}\
+    \}\
+  </style>\
+</head>\
+<body>\
+\
+  <header>\
+    <div class="shell topbar">\
+      <div class="brand">\uc0\u1057 \u1084 \u1077 \u1083 \u1077 \u1077 <span>.</span></div>\
+      <nav class="topnav">\
+        <button type="button" id="btn-home" class="primary" onclick="switchView('home')">\uc0\u1054  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1077 </button>\
+        <button type="button" id="btn-dashboard" onclick="switchView('dashboard')">\uc0\u1052 \u1086 \u1081  \u1087 \u1091 \u1090 \u1100 </button>\
+      </nav>\
+    </div>\
+  </header>\
+\
+  <main id="main" class="shell">\
+    <!-- \uc0\u1054  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1077  -->\
+    <div id="view-home">\
+      <div class="hero">\
+        <h1>\uc0\u1053 \u1077  \u1085 \u1091 \u1078 \u1085 \u1086  \u1089 \u1090 \u1072 \u1090 \u1100  \u1073 \u1077 \u1089 \u1089 \u1090 \u1088 \u1072 \u1096 \u1085 \u1099 \u1084 . \u1052 \u1086 \u1078 \u1085 \u1086  \u1089 \u1076 \u1077 \u1083 \u1072 \u1090 \u1100  \u1085 \u1077 \u1073 \u1086 \u1083 \u1100 \u1096 \u1086 \u1081  \u1096 \u1072 \u1075  \u1089  \u1074 \u1086 \u1083 \u1085 \u1077 \u1085 \u1080 \u1077 \u1084 .</h1>\
+        <p>\uc0\u1059 \u1074 \u1077 \u1088 \u1077 \u1085 \u1085 \u1086 \u1089 \u1090 \u1100  \u1095 \u1072 \u1089 \u1090 \u1086  \u1087 \u1086 \u1103 \u1074 \u1083 \u1103 \u1077 \u1090 \u1089 \u1103  \u1087 \u1086 \u1089 \u1083 \u1077  \u1076 \u1077 \u1081 \u1089 \u1090 \u1074 \u1080 \u1103 , \u1072  \u1085 \u1077  \u1076 \u1086  \u1085 \u1077 \u1075 \u1086 . \u1052 \u1086 \u1078 \u1085 \u1086  \u1074 \u1086 \u1083 \u1085 \u1086 \u1074 \u1072 \u1090 \u1100 \u1089 \u1103  \u1080  \u1074 \u1089 \u1105 -\u1090 \u1072 \u1082 \u1080  \u1079 \u1072 \u1076 \u1072 \u1090 \u1100  \u1074 \u1086 \u1087 \u1088 \u1086 \u1089 , \u1074 \u1099 \u1089 \u1082 \u1072 \u1079 \u1072 \u1090 \u1100  \u1084 \u1085 \u1077 \u1085 \u1080 \u1077  \u1080 \u1083 \u1080  \u1087 \u1086 \u1087 \u1088 \u1086 \u1089 \u1080 \u1090 \u1100  \u1086  \u1087 \u1086 \u1084 \u1086 \u1097 \u1080 . \u1042 \u1086 \u1083 \u1085 \u1077 \u1085 \u1080 \u1077  \u1085 \u1077  \u1086 \u1090 \u1084 \u1077 \u1085 \u1103 \u1077 \u1090  \u1087 \u1086 \u1089 \u1090 \u1091 \u1087 \u1086 \u1082 .</p>\
+        <p>\uc0\u1062 \u1077 \u1083 \u1100  \u1082 \u1091 \u1088 \u1089 \u1072  \'97 \u1085 \u1077  \u1087 \u1086 \u1085 \u1088 \u1072 \u1074 \u1080 \u1090 \u1100 \u1089 \u1103  \u1074 \u1089 \u1077 \u1084  \u1080  \u1085 \u1077  \u1089 \u1090 \u1072 \u1090 \u1100  \u1089 \u1072 \u1084 \u1099 \u1084  \u1075 \u1088 \u1086 \u1084 \u1082 \u1080 \u1084  \u1095 \u1077 \u1083 \u1086 \u1074 \u1077 \u1082 \u1086 \u1084  \u1074  \u1082 \u1086 \u1084 \u1085 \u1072 \u1090 \u1077 . \u1062 \u1077 \u1083 \u1100  \'97 \u1095 \u1072 \u1097 \u1077  \u1074 \u1099 \u1073 \u1080 \u1088 \u1072 \u1090 \u1100  \u1089 \u1074 \u1086 \u1080  \u1076 \u1077 \u1081 \u1089 \u1090 \u1074 \u1080 \u1103 , \u1072  \u1085 \u1077  \u1072 \u1074 \u1090 \u1086 \u1084 \u1072 \u1090 \u1080 \u1095 \u1077 \u1089 \u1082 \u1080  \u1087 \u1086 \u1076 \u1095 \u1080 \u1085 \u1103 \u1090 \u1100 \u1089 \u1103  \u1089 \u1090 \u1088 \u1072 \u1093 \u1091 .</p>\
+      </div>\
+      <button class="primary" onclick="switchView('dashboard')">\uc0\u1055 \u1077 \u1088 \u1077 \u1081 \u1090 \u1080  \u1082  \u1087 \u1088 \u1072 \u1082 \u1090 \u1080 \u1082 \u1077  \u8594 </button>\
+    </div>\
+\
+    <!-- \uc0\u1052 \u1086 \u1081  \u1087 \u1091 \u1090 \u1100  -->\
+    <div id="view-dashboard" hidden>\
+      <h2>\uc0\u1042 \u1072 \u1096 \u1072  \u1087 \u1088 \u1072 \u1082 \u1090 \u1080 \u1082 \u1072 </h2>\
+      <div class="card">\
+        <h3>\uc0\u1059 \u1074 \u1077 \u1088 \u1077 \u1085 \u1085 \u1086 \u1089 \u1090 \u1100  \'97 \u1085 \u1077  \u1086 \u1090 \u1089 \u1091 \u1090 \u1089 \u1090 \u1074 \u1080 \u1077  \u1089 \u1090 \u1088 \u1072 \u1093 \u1072 </h3>\
+        <p class="muted">\uc0\u1063 \u1090 \u1086 \u1073 \u1099  \u1076 \u1074 \u1080 \u1075 \u1072 \u1090 \u1100 \u1089 \u1103 , \u1085 \u1091 \u1078 \u1085 \u1072  \u1082 \u1086 \u1085 \u1082 \u1088 \u1077 \u1090 \u1085 \u1072 \u1103  \u1089 \u1080 \u1090 \u1091 \u1072 \u1094 \u1080 \u1103 , \u1072  \u1085 \u1077  \u1079 \u1072 \u1076 \u1072 \u1095 \u1072  \'ab\u1087 \u1086 \u1083 \u1085 \u1086 \u1089 \u1090 \u1100 \u1102  \u1087 \u1077 \u1088 \u1077 \u1076 \u1077 \u1083 \u1072 \u1090 \u1100  \u1089 \u1077 \u1073 \u1103 \'bb.</p>\
+        \
+        <label for="q1">\uc0\u1054 \u1087 \u1080 \u1096 \u1080 \u1090 \u1077  \u1089 \u1080 \u1090 \u1091 \u1072 \u1094 \u1080 \u1102 , \u1074  \u1082 \u1086 \u1090 \u1086 \u1088 \u1086 \u1081  \u1074 \u1099  \u1093 \u1086 \u1090 \u1080 \u1090 \u1077  \u1095 \u1091 \u1074 \u1089 \u1090 \u1074 \u1086 \u1074 \u1072 \u1090 \u1100  \u1089 \u1077 \u1073 \u1103  \u1091 \u1074 \u1077 \u1088 \u1077 \u1085 \u1085 \u1077 \u1077 :</label>\
+        <textarea id="q1" oninput="saveData()" placeholder="\uc0\u1053 \u1072 \u1087 \u1088 \u1080 \u1084 \u1077 \u1088 : \u1088 \u1072 \u1079 \u1075 \u1086 \u1074 \u1086 \u1088  \u1089  \u1088 \u1091 \u1082 \u1086 \u1074 \u1086 \u1076 \u1080 \u1090 \u1077 \u1083 \u1077 \u1084 , \u1074 \u1099 \u1089 \u1090 \u1091 \u1087 \u1083 \u1077 \u1085 \u1080 \u1077  \u1085 \u1072  \u1089 \u1086 \u1079 \u1074 \u1086 \u1085 \u1077 ..."></textarea>\
+\
+        <label for="q2">\uc0\u1050 \u1072 \u1082 \u1086 \u1081  \u1084 \u1072 \u1083 \u1077 \u1085 \u1100 \u1082 \u1080 \u1081  \u1096 \u1072 \u1075  \u1074 \u1099  \u1084 \u1086 \u1078 \u1077 \u1090 \u1077  \u1089 \u1076 \u1077 \u1083 \u1072 \u1090 \u1100 , \u1085 \u1077 \u1089 \u1084 \u1086 \u1090 \u1088 \u1103  \u1085 \u1072  \u1074 \u1086 \u1083 \u1085 \u1077 \u1085 \u1080 \u1077 ?</label>\
+        <textarea id="q2" oninput="saveData()" placeholder="\uc0\u1053 \u1072 \u1087 \u1088 \u1080 \u1084 \u1077 \u1088 : \u1079 \u1072 \u1076 \u1072 \u1090 \u1100  \u1086 \u1076 \u1080 \u1085  \u1074 \u1086 \u1087 \u1088 \u1086 \u1089  \u1074  \u1082 \u1086 \u1085 \u1094 \u1077  \u1074 \u1089 \u1090 \u1088 \u1077 \u1095 \u1080 ..."></textarea>\
+        \
+        <div id="status" class="status-bar"></div>\
+      </div>\
+    </div>\
+  </main>\
+\
+  <footer>\
+    <div class="shell" style="font-size: 0.9rem; color: var(--muted);">\
+      <p>\uc0\u1047 \u1072 \u1087 \u1080 \u1089 \u1080  \u1072 \u1074 \u1090 \u1086 \u1084 \u1072 \u1090 \u1080 \u1095 \u1077 \u1089 \u1082 \u1080  \u1089 \u1086 \u1093 \u1088 \u1072 \u1085 \u1103 \u1102 \u1090 \u1089 \u1103  \u1074  \u1074 \u1072 \u1096 \u1077 \u1084  \u1073 \u1088 \u1072 \u1091 \u1079 \u1077 \u1088 \u1077 . \u1044 \u1088 \u1091 \u1075 \u1080 \u1077  \u1083 \u1102 \u1076 \u1080  \u1085 \u1077  \u1091 \u1074 \u1080 \u1076 \u1103 \u1090  \u1074 \u1072 \u1096 \u1080  \u1086 \u1090 \u1074 \u1077 \u1090 \u1099 , \u1087 \u1086 \u1082 \u1072  \u1074 \u1099  \u1089 \u1072 \u1084 \u1080  \u1085 \u1077  \u1087 \u1086 \u1082 \u1072 \u1078 \u1077 \u1090 \u1077  \u1080 \u1084  \u1101 \u1082 \u1088 \u1072 \u1085 .</p>\
+    </div>\
+  </footer>\
+\
+  <script>\
+    // \uc0\u1047 \u1072 \u1075 \u1088 \u1091 \u1079 \u1082 \u1072  \u1076 \u1072 \u1085 \u1085 \u1099 \u1093  \u1087 \u1088 \u1080  \u1089 \u1090 \u1072 \u1088 \u1090 \u1077  \u1089 \u1090 \u1088 \u1072 \u1085 \u1080 \u1094 \u1099 \
+    window.addEventListener('DOMContentLoaded', () => \{\
+      document.getElementById('q1').value = localStorage.getItem('smelee_q1') || '';\
+      document.getElementById('q2').value = localStorage.getItem('smelee_q2') || '';\
+    \});\
+\
+    // \uc0\u1040 \u1074 \u1090 \u1086 \u1089 \u1086 \u1093 \u1088 \u1072 \u1085 \u1077 \u1085 \u1080 \u1077  \u1087 \u1088 \u1080  \u1074 \u1074 \u1086 \u1076 \u1077 \
+    function saveData() \{\
+      const q1Val = document.getElementById('q1').value;\
+      const q2Val = document.getElementById('q2').value;\
+      \
+      localStorage.setItem('smelee_q1', q1Val);\
+      localStorage.setItem('smelee_q2', q2Val);\
+      \
+      const status = document.getElementById('status');\
+      status.innerText = '\uc0\u1057 \u1086 \u1093 \u1088 \u1072 \u1085 \u1077 \u1085 \u1086  \u1083 \u1086 \u1082 \u1072 \u1083 \u1100 \u1085 \u1086 ...';\
+      setTimeout(() => \{ status.innerText = ''; \}, 1500);\
+    \}\
+\
+    // \uc0\u1055 \u1077 \u1088 \u1077 \u1082 \u1083 \u1102 \u1095 \u1077 \u1085 \u1080 \u1077  \u1074 \u1082 \u1083 \u1072 \u1076 \u1086 \u1082 \
+    function switchView(viewName) \{\
+      document.getElementById('view-home').hidden = (viewName !== 'home');\
+      document.getElementById('view-dashboard').hidden = (viewName !== 'dashboard');\
+      \
+      document.getElementById('btn-home').classList.toggle('primary', viewName === 'home');\
+      document.getElementById('btn-dashboard').classList.toggle('primary', viewName === 'dashboard');\
+    \}\
+  </script>\
+</body>\
+</html>\
+}
